@@ -1,4 +1,4 @@
-<%--
+<%@ page import="java.util.Date" %><%--
   Created by IntelliJ IDEA.
   User: Aliaksandr_Makavets1
   Date: 23.11.2016
@@ -11,6 +11,6 @@
     <title>$Title$</title>
   </head>
   <body>
-  Там тарабуууум
+<%= new Date() %>
   </body>
 </html>
