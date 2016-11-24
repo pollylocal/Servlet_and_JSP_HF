@@ -1,4 +1,4 @@
 public class FirstClass
 {
- int i = 5;
+ int i = 6;
 }
