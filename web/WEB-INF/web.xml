@@ -11,4 +11,15 @@
         <servlet-name>Chapter1 Servlet</servlet-name>
         <url-pattern>/Serv1</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Chapter3 Servlet</servlet-name>
+        <servlet-class>com.example.web.BeerSelect</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Chapter3 Servlet</servlet-name>
+        <url-pattern>/SelectBeer.do</url-pattern>
+    </servlet-mapping>
+
+
 </web-app>
