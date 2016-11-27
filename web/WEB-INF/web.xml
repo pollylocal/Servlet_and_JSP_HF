@@ -21,5 +21,54 @@
         <url-pattern>/SelectBeer.do</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>Jar Download Servlet</servlet-name>
+        <servlet-class>CodeDownloadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Jar Download Servlet</servlet-name>
+        <url-pattern>/jar</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Redirect Test</servlet-name>
+        <servlet-class>RedirectServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Redirect Test</servlet-name>
+        <url-pattern>/redirectTest</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>BeerParamTest</servlet-name>
+        <servlet-class>com.example.chapter5.TestInitParams</servlet-class>
+        <init-param>
+            <param-name>admin-email</param-name>
+            <param-value>adminemail@epam.com</param-value>
+        </init-param>
+        <init-param>
+            <param-name>main-email</param-name>
+            <param-value>mainemail@epam.com</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BeerParamTest</servlet-name>
+        <url-pattern>/Testers.do</url-pattern>
+    </servlet-mapping>
 
+    <servlet>
+        <servlet-name>Chapter 5 ListenerTester</servlet-name>
+        <servlet-class>com.example.chapter5.ListenerTesterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Chapter 5 ListenerTester</servlet-name>
+        <url-pattern>/ListenerTest</url-pattern>
+    </servlet-mapping>
+    <context-param>
+        <param-name>breed</param-name>
+        <param-value>Miniature Schnauzer</param-value>
+    </context-param>
+    <listener>
+        <listener-class>com.example.chapter5.MyFirstServletContextListener</listener-class>
+    </listener>
 </web-app>
