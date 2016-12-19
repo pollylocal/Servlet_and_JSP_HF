@@ -71,4 +71,15 @@
     <listener>
         <listener-class>com.example.chapter5.MyFirstServletContextListener</listener-class>
     </listener>
+    
+    <servlet>
+        <servlet-name>Chapter 6 Session Timeour Servlet</servlet-name>
+        <servlet-class>com.example.chapter6.InvalidateSessionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Chapter 6 Session Timeour Servlet</servlet-name>
+        <url-pattern>/InvalidateTest</url-pattern>
+    </servlet-mapping>
+
+
 </web-app>
