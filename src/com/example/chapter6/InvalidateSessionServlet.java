@@ -1,5 +1,7 @@
 package com.example.chapter6;
 
+import com.example.chapter5.Dog;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -17,16 +19,9 @@ public class InvalidateSessionServlet extends HttpServlet
         PrintWriter out = response.getWriter();
         HttpSession session = request.getSession();
         session.setAttribute("foo", "42");
+        session.setAttribute("dog", new Dog("breed"));
         //        session.invalidate();
-        session.setMaxInactiveInterval(0);
-        try
-        {
-            Thread.sleep(1200);
-        }
-        catch (InterruptedException e)
-        {
-            e.printStackTrace();
-        }
+        session.setMaxInactiveInterval(1);
         String foo = (String) session.getAttribute("foo");
         if (session.isNew())
         {
