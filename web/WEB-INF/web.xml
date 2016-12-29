@@ -82,4 +82,12 @@
     </servlet-mapping>
 
 
+    <servlet>
+        <servlet-name>Chapter8</servlet-name>
+        <servlet-class>com.example.chapter8.Chapter8PersonServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Chapter8</servlet-name>
+        <url-pattern>/Chapter8</url-pattern>
+    </servlet-mapping>
 </web-app>
